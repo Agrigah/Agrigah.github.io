@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0.5rem rgba(0,0,0,.1);
+}
+*{
+    font-family: 'Nunito', sans-serif;
+        margin: 0;padding: 0;
+        text-decoration: none;
+        outline: none;border: none;
+        text-transform: capitalize;
+        transition: all.2s linear ;
+}
+body{
+    background-color: rgb(22, 22, 22);
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+    background-color: rgb(22, 22, 22);
+
+}
+
+
+header{
+    position: fixed;
+    top:0;left:0;right:0;
+    background: rgb(29, 28, 28);
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo{
+    color:white;
+    font-size: 2.5rem;
+    font-weight: bolder;
+
+}
+header .logo i{
+    color:var(--green);
+}
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light-color);
+}
+header .navbar a.active,
+header .navbar a:hover{
+    color: #fff;
+    background-color: var(--green);
+}
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: 5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color:white;
+    border-radius: 50%;
+    background: rgb(38, 37, 37);
+
+}
+header .icons i:hover,
+header .icons a:hover{
+    color: #fff;
+    background: var(--green);
+    transform: rotate(360deg);
+}
+header .icons #menu-bars{
+    display: none;
+}
+
+
+.home .home-slider .slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+    padding-top: 9rem;
+    background-color: #222224;
+}
+.home .home-slider .slide .content{
+    flex:1 1 45rem;
+}
+
+.home .home-slider .slide .image{
+    flex:1 1 45rem;
+}
+
+.home .home-slider .slide .image img{
+    width:100% ;
+}
+.home .home-slider .slide .content span{
+    color:var(--green) ;
+    font-size: 2.5rem;
+}
+.home .home-slider .slide .content h3{
+    color:white ;
+    font-size: 7rem;
+}
+.home .home-slider .slide .content p{
+    color:white;
+    font-size: 2.2rem;
+    padding:.5rem 0;
+    line-height: 1.5;
+}
+.swiper-pagination-bullet-active{
+background:var(--green);
+}
+.home .home-slider .slide .content button{
+    color: var(--green);
+    text-decoration: underline;
+    text-decoration: none;
+    border-radius: 1.5rem;
+    display:block ;
+        padding:1.5rem ;
+        margin: 1rem;
+        font-size: 2rem;
+        background: var(--black);
+}
+
+
+
+
+
+.container{
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0%;
+
+}
+.aya{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+.container .menu{
+    width: 80%;
+    font-size: 200%;
+}
+.container .menu .header{
+  font-family: Gilroy;
+  color:white ;
+}
+.container .menu .header p{
+    font-family: Poppins;
+    opacity: 0.5;
+}
+.container .menu .tags{
+    margin-top:5% ;
+}
+.container .menu .tags .tag{
+    height: 90px;
+    width:200px ;
+    background-color: #222224;
+    color: white;
+    font-family: Poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.container .menu .tags .tag .icon{
+    height: 40px;
+    width: 40px;
+    margin-right: 5%;
+
+}
+.container .menu .tags .tag .icon img{
+    width: 100%;
+}
+.container .orders{
+    width: 30%;
+    padding-left: 5%;
+    font-size: 200%;
+}
+.container .orders .header h1{
+    font-family: Gilroy;
+    color: white;
+}
+.container .orders .header p{
+    color: white;
+    font-family:Open Sans;
+    opacity: 0.5;
+}
+
+
+.container .burgers{
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    overflow:auto;
+    scroll-behavior: smooth;
+}
+.container .burgers::-webkit-scrollbar{
+    -webkit-appearance: none;
+    width: 8px;
+}
+.container .burgers::-webkit-scrollbar-track{
+    background-color: #222224;
+    border-radius: 12px;
+}
+.container .burgers::-webkit-scrollbar-thumb{
+    background-color: var(--green);
+}
+.container .burgers .burger{
+    height: 300px;
+    width: 250px;
+    background-color: #222224;
+    border-radius: 12px;
+    padding: 2%;
+    margin: 2%;
+    margin-left: 0%;
+}
+.container .burgers .burger .image{
+    height: 200px;
+    width: 230px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.container .burgers .burger .image img{
+    width: 100%;
+}
+.container .burgers .burger .title{
+    font-family: Poppins;
+    color: white;
+    font-size: 2rem;
+    margin-top: 5%;
+    height: 80px;
+    overflow: hidden;
+    font-weight: bolder;
+}
+.container .burgers .burger .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .burgers .burger .bottom .price{
+    color: var(--green);
+    font-family: Gilroy;
+    font-size: 2rem;
+}
+.container .burgers .burger .bottom .cart i{
+    color: var(--green);
+    font-size: 2rem;
+    cursor: pointer;
+}
+.orderdburgers{
+    margin-top: 5%;
+    height: 250px;
+    overflow-y: auto;
+    width:450px ;
+    margin-bottom: 5%;
+}
+.container .orderdburgers::-webkit-scrollbar{
+    -webkit-appearance: none;
+    width: 8px;
+}
+.container .orderdburgers::-webkit-scrollbar-track{
+    background-color: #222224;
+    border-radius: 12px;
+}
+.container .orderdburgers::-webkit-scrollbar-thumb{
+    background-color: var(--green);
+}
+ .orderdburgers .burger{
+    height: 100px;
+    width: 400px;
+    background-color: #222224;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    margin-bottom: 5%;
+}
+.orderdburgers .burger .icon{
+    height: 60px;
+    width: 70px;
+    overflow: hidden;
+    border-radius:12px ;
+    margin-right: 5%;
+}
+.orderdburgers .burger .icon img{
+    width: 100%;
+}
+.orderdburgers .burger .title{
+    font-family: Poppins;
+    color: white;
+    font-size: 0.8rem;
+    width: 300px;
+    overflow: hidden;
+    
+}
+.orderdburgers .burger .title p{
+    font-family: Gilroy;
+    color: var(--green);
+    font-size: 1.5rem;
+    opacity: 0.5;
+}
+.orderdburgers .burger .title h1{
+    width: 250px;
+    overflow: hidden;
+
+}
+.orderdburgers .burger .delete i{
+    font-size: 2rem;
+    color: var(--green);
+    cursor: pointer;
+}
+.orders .bill{
+    height: 280px;
+    width: 400px;
+    background-color: #222224;
+    border-radius: 12px;
+    padding: 2%;
+}
+.orders .bill .cash{
+    color:var(--light-color);
+    font-family: Poppins;
+    display: flex;
+    justify-content: space-between;
+    padding-right:5% ;
+    margin-top: 5%;
+    padding-left: 5%;
+}
+.orders .bill .total{
+    border-top: 2px dashed white ;
+    padding-top:5% ;
+}
+.orders .bill span{
+    color: white;
+    opacity: 1;
+}
+.orders .bill .buttom{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+.orders .bill .buttom button{
+    height: 80px;
+    width: 400px;
+    border-radius: 12px;
+    background-color: var(--green);
+    color: #fff;
+    font-family: Gilroy;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    background-color: #252527;
+}
+.footer .box-container .box h3{
+    padding: .5rem;
+    font-size: 2.5rem;
+    color: white;
+}
+.footer .box-container .box a{
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: white;
+}
+.footer .box-container .box a:hover{
+    color: var(--green);
+    text-decoration: underline;
+}
+.footer .credit{
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(24, 23, 23);
+    padding: .5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+
+}
+.footer .credit span{
+    color: var(--green);
+}
